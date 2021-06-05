@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="nav-wrapper">
+            <div class="left">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href ="index.html"> Home </a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="videoTest.html"> Video Test </a>
+                </div>  
+
+                <div class="nav-link-wrapper">
+                    <a href="Game.html"> Game </a>
+                </div>  
+
+            </div>
+
+            <div class="right">
+                <div class="brand">
+                    <div>WebTest</div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="content-wrapper">
+            <div class="items-wrapper">
+                <div class="item">
+                    <div class="img-background" style="background-image:url(images/image1.png)"></div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle"> image 1 </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-background" style="background-image:url(images/image2.png)"></div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle"> image 2 </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-background" style="background-image:url(images/image3.png)"></div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle"> image 3 </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-background" style="background-image:url(images/image4.png)"></div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle"> image 4 </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-background" style="background-image:url(images/image5.png)"></div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle"> image 5 </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="img-background" style="background-image:url(images/image6.png)"></div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle"> image 6 </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script>
+    const Items = document.querySelectorAll('.item')
+    
+    Items.forEach(Item => {
+        Item.addEventListener('mouseover', () => {
+            Item.childNodes[1].classList.add('img-darken');
+        })
+
+        Item.addEventListener('mouseout', () => {
+            Item.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>

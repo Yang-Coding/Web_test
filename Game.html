@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Game </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+</body>
+
+<div class="game-page">
+
+    <div class="navBar">
+        <div class="home">
+            <a href="index.html"> HOME </a>
+        </div>
+
+        <div class="brand">
+            <div>WebTest</div>
+        </div>
+    </div>
+
+    <!--Scoreboard-->
+    <div class="score">
+        <span>
+            Score:  
+        </span>
+        <span id="score">
+            0
+        </span>
+    </div>
+
+    <!--End game UI-->
+    <div class="gameUI" id="gameUI">
+        <div class="popUp">
+            <h1 id="point">0</h1>
+            <p>Points</p>
+            <div>
+                <button class="button" id="startBtn">Start Game</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<canvas></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<script src="./game.js">
+</script>
+
+</html>
